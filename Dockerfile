@@ -1,7 +1,5 @@
 ARG ALPINE_VERSION=3.17
 FROM alpine:${ALPINE_VERSION}
-LABEL Maintainer="Tim de Pater <code@trafex.nl>"
-LABEL Description="Lightweight container with Nginx 1.22 & PHP 8.1 based on Alpine Linux."
 # Setup document root
 WORKDIR /var/www/html
 
@@ -10,21 +8,38 @@ RUN apk add --no-cache \
     curl \
     nginx \
     php81 \
+    php81-bcmath \
     php81-ctype \
     php81-curl \
     php81-dom \
     php81-fpm \
     php81-gd \
+    php81-pecl-igbinary	 \
+    php81-imap \
     php81-intl \
+    php81-ldap \
     php81-mbstring \
+    php81-pecl-memcached \
+    php81-pecl-msgpack \
     php81-mysqli \
     php81-opcache \
     php81-openssl \
+    # php81-pecl-pcov \
+    php81-pdo \
+    php81-pdo_mysql \
+    # php81-pecl-pdo_oci \
+    php81-pdo_sqlite \
     php81-phar \
+    # php81-pecl-readline \
+    php81-redis \
     php81-session \
+    php81-soap \
+    php81-pecl-swoole \
+    php81-xdebug \
     php81-xml \
     php81-xmlreader \
-    supervisor
+    php81-zip \
+    supervisor 
 
 # Configure nginx
 COPY config/nginx.conf /etc/nginx/nginx.conf
