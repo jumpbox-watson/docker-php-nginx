@@ -24,13 +24,10 @@ RUN apk add --no-cache \
     php81-mysqli \
     php81-opcache \
     php81-openssl \
-    # php81-pecl-pcov \
     php81-pdo \
     php81-pdo_mysql \
-    # php81-pecl-pdo_oci \
     php81-pdo_sqlite \
     php81-phar \
-    # php81-pecl-readline \
     php81-redis \
     php81-session \
     php81-soap \
