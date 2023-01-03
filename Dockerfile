@@ -14,24 +14,25 @@ RUN apk add --no-cache \
     php81-dom \
     php81-fpm \
     php81-gd \
-    php81-pecl-igbinary	 \
     php81-imap \
     php81-intl \
     php81-ldap \
     php81-mbstring \
-    php81-pecl-memcached \
-    php81-pecl-msgpack \
     php81-mysqli \
     php81-opcache \
     php81-openssl \
     php81-pdo \
     php81-pdo_mysql \
     php81-pdo_sqlite \
+    php81-pecl-igbinary	 \
+    php81-pecl-memcached \
+    php81-pecl-msgpack \
+    php81-pecl-swoole \
     php81-phar \
     php81-redis \
     php81-session \
     php81-soap \
-    php81-pecl-swoole \
+    php81-tokenizer \
     php81-xdebug \
     php81-xml \
     php81-xmlreader \
